@@ -51,7 +51,7 @@ function HomeIntro() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/mspronesti"
+                  href="https://github.com/PratikSonal"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -62,7 +62,7 @@ function HomeIntro() {
               
               <li className="social-icons">
                 <a
-                  href="."
+                  href="https://www.linkedin.com/in/PratikSonal"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -73,7 +73,7 @@ function HomeIntro() {
               
               <li className="social-icons">
                 <a
-                  href="mailto:massimiliano.pronesti@gmail.com"
+                  href="mailto:sonalpratik99@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
