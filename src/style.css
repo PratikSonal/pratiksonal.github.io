@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #050a30;
+  background-color: #000d1a;
   background-image: url(./assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -144,7 +144,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #000d1a !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -401,7 +401,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 10);
+  background-color: #000b1a;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;

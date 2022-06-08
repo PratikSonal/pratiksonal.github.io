@@ -21,6 +21,7 @@ function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
+    document.title = "Pratik Sonal";
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
