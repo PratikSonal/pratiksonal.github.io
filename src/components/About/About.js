@@ -25,16 +25,14 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "25px", paddingBottom: "50px" }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
-           <strong className="purple">Languages </strong>
-           and <strong className="purple">Frameworks </strong> I use
-           
+          Professional <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
@@ -43,7 +41,7 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
-
+        
       </Container>
     </Container>
   );

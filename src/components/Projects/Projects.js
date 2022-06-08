@@ -1,17 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-
-import c19wv from "../../assets/Projects/c19wv.PNG";
 import metacopy from "../../assets/Projects/metacopy.png";
-
+import c19wv from "../../assets/Projects/c19wv.PNG";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          MY RECENT <strong className="purple">WORKS </strong>
+          MY  RECENT <strong className="purple"> WORKS </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -36,7 +34,7 @@ function Projects() {
               link="https://github.com/PratikSonal/COVID-19-WorldView"
             />
           </Col>
-          
+
         </Row>
       </Container>
     </Container>
