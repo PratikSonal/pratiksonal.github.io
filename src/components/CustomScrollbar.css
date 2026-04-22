@@ -1,0 +1,27 @@
+/* =========================================
+   CUSTOM SCROLLBAR
+   ========================================= */
+
+.cscroll__track {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100vh;
+  z-index: 9998;
+  pointer-events: none;
+  /* Transparent track */
+  background: transparent;
+}
+
+.cscroll__thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  border-radius: 10px;
+  background: var(--color-accent);
+  opacity: 0;                            /* hidden by default */
+  transition: opacity 0.35s ease;       /* smooth fade in/out */
+  will-change: transform, opacity;
+}

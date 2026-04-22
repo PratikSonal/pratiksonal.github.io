@@ -1,0 +1,213 @@
+/* =========================================
+   NAVBAR  (class prefix: nav-bar / nav-overlay)
+   ========================================= */
+
+/* ---- Fixed header bar ---- */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 500;
+  transition: background 0.45s var(--ease-out), backdrop-filter 0.45s;
+}
+
+.nav-bar--scrolled {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* When overlay is open keep bar transparent (overlay covers everything) */
+.nav-bar--open {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+.nav-bar__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---- Logo ---- */
+.nav-bar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: var(--color-accent);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: var(--font);
+  border: none;
+  cursor: pointer;
+  z-index: 600;
+  position: relative;
+  transition: background 0.3s, transform 0.3s var(--ease-out);
+}
+
+.nav-bar__logo:hover {
+  background: var(--color-accent-hover);
+  transform: scale(1.05);
+}
+
+/* ---- Hamburger ---- */
+.nav-bar__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 600;
+  position: relative;
+  padding: 0;
+}
+
+.nav-bar__burger span {
+  display: block;
+  height: 1.5px;
+  background: white;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.42s var(--ease-out), opacity 0.25s, width 0.3s;
+}
+
+.nav-bar__burger span:nth-child(1) { width: 100%; }
+.nav-bar__burger span:nth-child(2) { width: 62%; margin-left: auto; }
+
+/* X state */
+.nav-bar__burger--x span:nth-child(1) {
+  transform: translateY(4.5px) rotate(45deg);
+  width: 100%;
+}
+.nav-bar__burger--x span:nth-child(2) {
+  transform: translateY(-4.5px) rotate(-45deg);
+  width: 100%;
+}
+
+/* =========================================
+   FULL-SCREEN OVERLAY
+   ========================================= */
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-dark);
+  z-index: 490;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.52s var(--ease-out), visibility 0.52s;
+}
+
+.nav-overlay--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Nav list */
+.nav-overlay__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-overlay__item {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  padding: 18px 0;
+  cursor: pointer;
+  text-align: left;
+  /* Stagger-in animation */
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+.nav-overlay--open .nav-overlay__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-overlay__num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  min-width: 26px;
+  font-family: var(--font);
+}
+
+.nav-overlay__label {
+  font-size: clamp(32px, 5vw, 62px);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1;
+  font-family: var(--font);
+  transition: color 0.28s, transform 0.28s var(--ease-out);
+}
+
+.nav-overlay__item:hover .nav-overlay__label {
+  color: var(--color-accent);
+  transform: translateX(14px);
+}
+
+/* Footer row */
+.nav-overlay__foot {
+  position: absolute;
+  bottom: 44px;
+  left: 60px;
+  right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.nav-overlay__foot a {
+  color: rgba(255, 255, 255, 0.42);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.nav-overlay__foot a:hover {
+  color: var(--color-accent);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-bar__inner { padding: 0 24px; }
+  .nav-overlay    { padding: 0 24px; }
+  .nav-overlay__foot {
+    left: 24px;
+    right: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

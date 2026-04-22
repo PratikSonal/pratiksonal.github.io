@@ -1,6 +1,1 @@
-import React from "react";
-function Pre(props) {
-  return <div id={props.load ? "preloader" : "preloader-none"}></div>;
-}
-
-export default Pre;
+// Legacy CRA file — not used. Entry is src/main.jsx
