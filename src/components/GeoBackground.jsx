@@ -21,8 +21,8 @@ export default function GeoBackground({ color = 'rgba(255,255,255,0.055)' }) {
       sides:   5 + Math.floor(Math.random() * 4),
       rot:     Math.random() * Math.PI * 2,
       driftAmp: 10 + Math.random() * 16,
-      driftSpd: 0.00018 + Math.random() * 0.00022,
-      rotSpd:  0.00008 + Math.random() * 0.00012,
+      driftSpd: 0.0018 + Math.random() * 0.0022,
+      rotSpd:  0.0008 + Math.random() * 0.0012,
       phase:   Math.random() * Math.PI * 2,
     }))
 
