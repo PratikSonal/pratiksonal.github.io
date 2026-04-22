@@ -1,0 +1,133 @@
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+.about {
+  min-height: 100vh;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Left */
+.about__intro {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.72;
+  margin-bottom: 20px;
+}
+
+.about__bio {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-muted);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.about__bio:last-of-type {
+  margin-bottom: 40px;
+}
+
+/* Right — identity card */
+.about__card {
+  background: var(--color-light);
+  border-radius: 20px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.about__card-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.about__card-info strong {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.about__card-info span {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.about__location {
+  font-size: 12px !important;
+  color: var(--color-accent) !important;
+  margin-top: 3px;
+}
+
+/* Skills */
+.about__skills-wrap {
+  background: var(--color-light);
+  border-radius: 20px;
+  padding: 28px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.about__skills-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 18px;
+}
+
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.about__skill-tag {
+  padding: 7px 16px;
+  background: white;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1a1a1a;
+  transition: border-color 0.25s, color 0.25s, background 0.25s;
+  cursor: default;
+}
+
+.about__skill-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(37, 99, 235, 0.04);
+}
+
+@media (max-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

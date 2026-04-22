@@ -1,0 +1,36 @@
+/* =========================================
+   CUSTOM SCROLLBAR
+   ========================================= */
+
+/* Hide the native scrollbar entirely */
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
+/* Fixed track on the right edge */
+.custom-scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* The blue thumb */
+.custom-scrollbar__thumb {
+  position: absolute;
+  right: 0;
+  width: 4px;
+  border-radius: 4px;
+  background: var(--color-accent);
+
+  /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Visible while scrolling */
+.custom-scrollbar__thumb.visible {
+  opacity: 1;
+}

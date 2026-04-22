@@ -1,0 +1,33 @@
+/* =========================================
+   SIDE LABEL
+   ========================================= */
+
+.side-label {
+  position: fixed;
+  left: 24px;
+  bottom: 40px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  z-index: 50;
+  pointer-events: none;
+  /* Smooth transition for both color changes */
+  transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* On dark sections (Home, Contact) → white text */
+.side-label--dark {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* On light/soft sections (About, Experience, Projects, Resume) → dark text */
+.side-label--light {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .side-label { display: none; }
+}
