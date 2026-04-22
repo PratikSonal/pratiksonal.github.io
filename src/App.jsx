@@ -15,9 +15,9 @@ export default function App() {
     <>
       <CustomScrollbar />
 
-      <ErrorBoundary name="Navbar">
+      {/* <ErrorBoundary name="Navbar">
         <Navbar />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
       <SideLabel />
 

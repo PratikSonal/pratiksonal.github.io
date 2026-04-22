@@ -68,7 +68,7 @@ export default function Contact() {
         </div>
 
         <div className="contact__footer">
-          <p>© {new Date().getFullYear()} {PERSONAL.name}. Designed &amp; built with care.</p>
+          <p>© {new Date().getFullYear()} {PERSONAL.name}</p>
         </div>
       </div>
     </section>

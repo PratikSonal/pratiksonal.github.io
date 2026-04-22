@@ -9,7 +9,7 @@ export const PERSONAL = {
   taglineLine2: 'Into Experiences',
   subtitle:     'From pixel-perfect interfaces to scalable web apps — I build things that are fast, accessible, and genuinely delightful to use.',
   email:        'sonalpratik99@gmail.com',
-  location:     'Bhubaneswar, India',
+  location:     'Bengaluru, India',
   github:       'https://github.com/PratikSonal',
   linkedin:     'https://www.linkedin.com/in/PratikSonal/',
   twitter:      'https://twitter.com/PratikSonal',
@@ -19,16 +19,16 @@ export const PERSONAL = {
 export const TYPEWRITER_STRINGS = [
   'Frontend Developer',
   'UI/UX Designer',
-  'React Specialist',
-  'Full Stack Dev',
+  'React Enthusiast',
+  'Performance Specialist',
 ]
 
 export const ABOUT = {
   intro:
-    "I'm a Computer Science undergrad at ITER, Bhubaneswar with a passion for crafting interfaces that feel effortless. I care deeply about the intersection of design and engineering.",
+    "I'm a Software Engineer in Bengaluru, India with a passion for crafting interfaces that feel effortless. I care deeply about the intersection of design and engineering.",
   bio: [
     "I believe great software is invisible — it gets out of the way and lets people do what they came to do. That philosophy drives every decision I make, from component architecture to colour contrast.",
-    "When I'm not shipping code, you'll find me gaming, reading, or planning my next trip. I think diverse experiences make for better designers.",
+    "When I'm not shipping code, you'll find me gaming, reading, or planning my next trip. I think diverse experiences make for better creators.",
   ],
   skills: [
     'JavaScript (ES2024)',
@@ -61,8 +61,8 @@ export const EXPERIENCE = [
     id: 2,
     role:        'UI/UX Design Intern',
     company:     'DesignHub Agency',
-    period:      'Jan 2024 – May 2024',
-    location:    'Bhubaneswar, India',
+    period:      'Jan 2024 - May 2024',
+    location:    'Bengaluru, India',
     description: 'Designed and prototyped end-to-end user flows for SaaS products. Ran usability tests and iterated on designs based on research findings.',
     highlights: [
       'Redesigned onboarding flow, reducing drop-off by 35%',
@@ -75,7 +75,7 @@ export const EXPERIENCE = [
     id: 3,
     role:        'Freelance Web Developer',
     company:     'Self-employed',
-    period:      '2022 – Present',
+    period:      '2022 - Present',
     location:    'Remote',
     description: 'Delivered custom websites and web apps for clients across e-commerce, healthcare, and education sectors.',
     highlights: [
@@ -89,7 +89,7 @@ export const EXPERIENCE = [
     id: 4,
     role:        'Open Source Contributor',
     company:     'Various Projects',
-    period:      '2023 – Present',
+    period:      '2023 - Present',
     location:    'Remote',
     description: 'Active contributor to open-source projects, focusing on developer tooling and UI component libraries.',
     highlights: [
